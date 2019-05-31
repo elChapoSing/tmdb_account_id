@@ -1,8 +1,6 @@
 
 let getToken = () => {
 
-    // eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3ZDJmMjA2NTNmMWEwNTE4ZDk4Yzk5OTc2ODY1OTRhYSIsInN1YiI6IjVjY2VhNTlkYzNhMzY4MzZiMGUwMWFlYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.CGYJa0MSdMT0lUHkeLqs5oqaxAF9-X5KHLbBm5Zn79w
-
     let url = "https://api.themoviedb.org/4/auth/request_token";
     let options = {
         method: "POST",
@@ -45,6 +43,7 @@ let getAuth = () => {
         $("#account_id").val(err);
     });
 };
+
 $(function() {
 
     $("#btn_get_req_token")
